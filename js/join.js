@@ -35,3 +35,33 @@ $(".login-form").validate({
     }
   }
 });
+
+$(".login-form button[type=submit]").click(joinEvent);
+
+function joinEvent(e) {
+  e.preventDefault();
+
+  var name = $("#username").val();
+  var email = $("#email").val();
+  var password = $("#password").val();
+
+  var sendData = { "name": name, "email": email, "password": password };
+
+  $.ajax({
+    type: "POST",
+    url: "http://localhost:8080/members",
+    data: JSON.stringify(sendData),
+    dataType: "json",
+    contentType: "application/json",
+    async: true,
+    success: function () {
+
+      //console.log(sendData);
+      alert(name + "Join success");
+    },
+    error: function () {
+      console.log("Join error");
+    }
+  });
+
+}
