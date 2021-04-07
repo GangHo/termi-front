@@ -17,7 +17,7 @@ function ajax(e) {
         if(xhr.readyState == xhr.DONE) {
             if(xhr.status == 200) {
                 console.log(xhr.responseText);
-                alert(email + " Join success");
+                alert(email + " Sign Up success");
             }else {
                 console.error(xhr.responseText);
             }

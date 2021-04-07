@@ -1,0 +1,99 @@
+body{
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #e0f2f1 !important;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+html, body {
+    height: 100%;
+}
+
+.medium-small {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+.login-form {
+    width: 360px;
+    height: 560px;
+}
+
+.login-form-text {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.login-text {
+    margin-top: -6px;
+    margin-left: -6px !important;
+}
+
+.margin {
+    margin: 0 !important;
+}
+
+.pointer-events {
+  pointer-events: auto !important;
+}
+
+.input-field >.material-icons  {
+  padding-top:10px;
+}
+
+.input-field div.error{
+    position: relative;
+    top: -1rem;
+    left: 3rem;
+    font-size: 0.8rem;
+    color:#FF4081;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.tabs {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 48px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    white-space: nowrap;
+  }
+
+.tabs .tab {
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .tabs {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    .tabs .tab {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+    }
+    .tabs .tab a {
+      padding: 0 12px;
+    }
+  }
