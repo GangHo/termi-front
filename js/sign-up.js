@@ -18,6 +18,7 @@ function ajax(e) {
             if(xhr.status == 200) {
                 console.log(xhr.responseText);
                 alert(email + " Sign Up success");
+                location.href='index.html';
             }else {
                 console.error(xhr.responseText);
             }
