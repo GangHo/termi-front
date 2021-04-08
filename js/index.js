@@ -14,6 +14,8 @@ function ajax(e) {
         if(xhr.readyState == xhr.DONE) {
             if(xhr.status == 200) {
                 console.log(xhr.responseText);
+                var json = JSON.parse(xhr.responseText);
+                localStorage.setItem('token',json.token);
                 alert(email + " Login success");
             }else {
                 console.error(xhr.responseText);
